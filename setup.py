@@ -10,10 +10,11 @@ from setuptools import setup
 
 setup(
     name='Flask-Realtime-Import',
-    version='0.0.1-dev',
-    url='http://example.com/flask-sqlite3/',
+    version='0.0.1.dev0',
+    url='https://github.com/caimaoy/flask-realtime-import',
     license='BSD',
     author='caimaoy',
+    keywords=['flask', 'realtime', 'import'],
     author_email='i@caimaoy.com',
     description='import the modules in every request',
     long_description=__doc__,
@@ -24,7 +25,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms='any',
-    install_requires=['Flask>=1.0'],
+    install_requires=['Flask>0.8'],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
