@@ -10,10 +10,11 @@ python:
 install:
   - pip install .
   - pip install tox-travis
+  - pip install coveralls pytest-cov
 
 script:
   - tox
-  - py.test  --verbose --cov-report html:cov.html --cov=flask_realtime_import tests/
+  - python -m pytest --verbose --cov-report html:cov.html --cov=flask_realtime_import tests/
 
 after_success:
   - coveralls
